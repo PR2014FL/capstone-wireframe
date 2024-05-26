@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness Wheel Goal Setting</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style2.css">
+</head>
+
+<body>
+    <nav>
+        <img onClick="sendHome()" src="./GuruCatLogo.svg" alt="home button" class="homeBtnLogo">
+        <h1>Wellness Goal Setting Chart</h1>
+    </nav>
+    <div class="bodyContainer">
+        <div class="leftSide">
+            <h2>8 Dimensions of Wellness</h2>
+            <!-- contains demensions -->
+            <div class="dim1 social">
+                <h3>Social</h3>
+                <div class="hidden-div">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod ad nisi nulla
+                    ullam repudiandae! Qui explicabo repellendus reiciendis, suscipit animi mollitia praesentium ipsa,
+                    sapiente eum expedita aut voluptates sequi debitis recusandae maxime cum odit quaerat neque
+                    eligendi, nisi alias dolorum? Debitis earum atque fuga illum natus nulla, eligendi repellendus
+                    maiores!</div>
+            </div>
+            <div class="dim1 occupational">
+                <h3>Occupational</h3>
+                <div class="hidden-div">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+            </div>
+            <div class="dim1 environmental">
+                <h3>Environmental</h3>
+                <div class="hidden-div">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus blanditiis rem
+                    laboriosam excepturi exercitationem.</div>
+            </div>
+            <div class="dim1 intellectual">
+                <h3>Intellectual</h3>
+                <div class="hidden-div">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro reprehenderit
+                    amet voluptatum magnam sit? Qui maxime ut, accusamus consequatur nesciunt fugit quia temporibus
+                    repellat facilis eius recusandae aliquam a dolorum nam quis, libero inventore, ipsum assumenda.
+                    Libero ipsum facilis voluptatibus.</div>
+            </div>
+            <div class="dim1 spiritual">
+                <h3>Spiritual</h3>
+                <div class="hidden-div">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores officia,
+                    voluptate expedita iure odio, dolorem magnam temporibus incidunt quos nobis repellat. Ducimus,
+                    laboriosam?</div>
+            </div>
+            <div class="dim1 emotional">
+                <h3>Emotional</h3>
+                <div class="hidden-div">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime culpa obcaecati
+                    ratione eligendi, dignissimos est mollitia? Rem voluptatem quia amet sit reiciendis doloremque
+                    aliquid culpa quidem adipisci recusandae, doloribus voluptatum porro. Exercitationem at aliquam hic?
+                    Ratione nisi, officia suscipit labore quae sequi aut ipsam deserunt accusantium quisquam delectus
+                    unde nihil molestias a enim odio quis laborum vero! Perspiciatis recusandae, iste dicta
+                    reprehenderit ipsum velit pariatur. Omnis deserunt commodi repellendus sapiente reiciendis dolor
+                    provident vitae! Id nobis a tempore quasi facere unde odit accusantium fuga ipsum vel officia
+                    recusandae quisquam aperiam nemo commodi consequatur, debitis libero. Ad facilis enim porro
+                    inventore.</div>
+            </div>
+            <div class="dim1 physical">
+                <h3>Physical</h3>
+                <div class="hidden-div">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum fuga voluptatem
+                    dolores doloribus dolorum ea!</div>
+            </div>
+            <div class="dim1 financial">
+                <h3>Financial</h3>
+                <div class="hidden-div">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur cupiditate
+                    omnis molestiae id, sapiente magni natus at aliquam officiis?</div>
+            </div>
+
+        </div>
+        <div class="rightSide">
+            <div class="upperGoalSection">
+                <div class="first3rd">
+                    <h2><span>&#43;</span> New Goal</h2>
+                    <input class="goalInput" type="text" placeholder="Goal Title.."><br>
+                    <p>Choose Dimension:</p><select name="Dimension" id="">
+                        <option value="1" selected>Social</option>
+                        <option value="2">Occupational</option>
+                        <option value="3">Environmental</option>
+                        <option value="4">Intellectual</option>
+                        <option value="5">Spiritual</option>
+                        <option value="6">Emotional</option>
+                        <option value="7">Physical</option>
+                        <option value="8">Financial</option>
+                    </select>
+
+                </div>
+                <textarea name="goalDetails" id="goalBody" cols="50" rows="8"
+                    placeholder="What can you do right now to improve your overall satisfaction in this dimension?"
+                    maxlength="185"></textarea>
+                <input class="submitBtn" type="Submit">
+                <!-- contains new goal setting window Create and state2(createForm) goes here -->
+            </div>
+            <div class="lowerGoalSection environmental">
+                <div class="goalNote">
+                    <div class="noteTitle">
+                        <p>Environmental Dimension</p>
+                        <h2>Better Lighting in the House</h2>
+                    </div>
+                    <div class="noteBody">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, voluptatum.
+                    </div>
+                    <div class="btnDiv">
+                        <button class="noteBtn">Edit</button>
+                        <button class="noteBtn">Delete</button>
+                    </div>
+                </div>
+                <!-- goals listed Read with useEffect and state3(updateForm) and state1(goals) goes here -->
+            </div>
+            <div class="lowerGoalSection spiritual">
+                <div class="goalNote">
+                    <div class="noteTitle">
+                        <p>Spiritual Dimension</p>
+                        <h2>Adopt another cat!</h2>
+                    </div>
+                    <div class="noteBody">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, dignissimos eius. Earum, labore
+                        dolorem voluptatum ratione deserunt veniam quis animi placeat, sint minus mollitia culpa.
+                    </div>
+                    <div class="btnDiv">
+                        <button class="noteBtn">Edit</button>
+                        <button class="noteBtn">Delete</button>
+                    </div>
+                </div>
+                <!-- goals listed Read with useEffect and state3(updateForm) and state1(goals) goes here -->
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./app.js" async defer></script>
+</body>
+
+</html>

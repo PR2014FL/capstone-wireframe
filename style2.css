@@ -1,0 +1,234 @@
+:root {
+  --orange: rgb(255, 98, 0);
+}
+
+.btn2 {
+  background-color: var(--orange);
+  border-color: var(--orange);
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+}
+.btn2:hover {
+  background-color: purple;
+  border-color: purple;
+  color: white;
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+}
+
+body {
+  background-color: rgb(218, 202, 229);
+}
+
+.homeBtnLogo {
+  height: 100%;
+  align-self: center;
+  margin: 1em;
+}
+.homeBtnLogo:hover {
+  cursor: pointer;
+}
+nav {
+  background-color: rgb(255, 255, 255, 0.5);
+  border-radius: 8px;
+  height: 14vh;
+  display: flex;
+  margin-bottom: 2%;
+  /* border: solid white; */
+}
+h1 {
+  color: var(--orange);
+  text-shadow: 3px 3px black;
+  font-size: 4vw;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  align-self: center;
+}
+h2 {
+  color: inheret;
+}
+.sectionContainer {
+  display: flex;
+  /* border: solid yellow; */
+}
+.leftSection {
+  width: 25vw;
+  /* border:  solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.rightSection {
+  /* border:solid blue; */
+  width: 60vw;
+  height: 60vh;
+  color: white;
+  font-size: large;
+  padding: 3%;
+  background-color: rgb(221, 131, 76);
+  border-radius: 50px;
+}
+/* --------------------------------------------------------------Wellness Wheel Goal Setting Styles */
+.bodyContainer {
+  display: flex;
+}
+
+.leftSide {
+  width: 25vw;
+  /* border: solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.rightSide {
+  width: 75vw;
+  /* border:  solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+h2 {
+  font-family: cursive;
+  /* text-decoration:underline; */
+}
+h3 {
+  /* border: solid black; */
+  margin: 10px;
+}
+.lowerGoalSection {
+  border: solid grey;
+  height: 15%;
+  width: 50%;
+  padding: 30px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-left: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 166, 0, 0.246);
+  /* box-sizing: content-box; */
+}
+
+.dim1,
+.social {
+  border: solid black;
+  text-align: center;
+  height: 50px;
+  width: 95%;
+  font-family: cursive;
+  position: relative;
+  padding: 0px;
+}
+
+.social {
+  background-color: aqua;
+}
+.occupational {
+  background-color: blueviolet;
+}
+.environmental {
+  background-color: rgb(88, 133, 22);
+}
+.intellectual {
+  background-color: yellowgreen;
+}
+.spiritual {
+  background-color: red;
+}
+.emotional {
+  background-color: goldenrod;
+}
+.physical {
+  background-color: orchid;
+}
+.financial {
+  background-color: yellow;
+}
+
+.hidden-div {
+  /* border: solid blue; */
+  background-color: whitesmoke;
+  padding: 10px 0px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.dim1:hover .hidden-div {
+  display: block;
+}
+
+.upperGoalSection {
+  border: solid grey;
+  height: 25%;
+  width: 50%;
+  padding: 30px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-left: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 166, 0, 0.246);
+}
+span {
+  color: red;
+  font-size: x-large;
+  font-weight: 900;
+}
+/* for the plus sign */
+.goalInput {
+  height: 20px;
+  width: 160px;
+}
+.submitBtn {
+  height: 60px;
+  width: 60px;
+  /* padding:20px; */
+  font-family: cursive;
+  align-self: center;
+  border-radius: 12px;
+}
+
+.goalNote {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.noteTitle {
+  /* border: solid black; */
+  width: 100%;
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 30px;
+}
+.noteTitle > * {
+  /* border: solid green; */
+  align-self: center;
+  margin-top: 0px;
+}
+.noteBody {
+    padding-bottom: 10px;
+}
+.btnDiv {
+  /* border: solid black; */
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-right: 60px;
+  height: 30px;
+}
+.noteBtn {
+    width: 60px;
+    height: 30px;
+}
